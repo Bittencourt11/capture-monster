@@ -1,5 +1,4 @@
-//DOM expoe interface para trabalhar
-//Criar o canvas -> canvas desenha graficos na tela via JS
+//Criar o canvas 
 const canvas = document.createElement("canvas"); //pode criar qualquer elemeno, div, p, etc.
 const ctx = canvas.getContext("2d");
 
