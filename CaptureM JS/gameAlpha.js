@@ -1,4 +1,5 @@
-//Criar o canvas 
+//DOM expoe interface para trabalhar
+//Criar o canvas -> canvas desenha graficos na tela via JS
 const canvas = document.createElement("canvas"); //pode criar qualquer elemeno, div, p, etc.
 const ctx = canvas.getContext("2d");
 
@@ -21,7 +22,7 @@ const heroImage = new Image();
 heroImage.onload = function (){
 	heroReady = true;
 };
-heroImage.src = "images/mario.png";
+heroImage.src = "images/hero.png";
 
 //add imagem do monstro
 let monsterReady = false; 
@@ -29,7 +30,7 @@ const monsterImage = new Image();
 monsterImage.onload = function (){
 	monsterReady = true;
 };
-monsterImage.src = "images/star.png";
+monsterImage.src = "images/monster.png";
 
 //criando objetos
 const hero = {

@@ -12,46 +12,12 @@
 		</audio>
 
 		<div>
-    		<a href="#" onclick="play()"><button class="button" style="background-color: green;">Play</button></a>
-    		<a href="#" onclick="pause()"><button class="button" style="background-color: yellow; color: black;">Pause</button></a>
-    		<a href="#" onclick="stop()"><button class="button" style="background-color: red;">Parar</button></a>
+    		<a href="#" onclick="play()"><button id="play" class="button">Play</button></a>
+    		<a href="#" onclick="pause()"><button id="pause" class="button">Pause</button></a>
+    		<a href="#" onclick="stop()"><button id="stop" class="button">Parar</button></a>
 		</div>
-		
-
-		<script> 
-			audio = document.getElementById('audio');
- 
-		    function play(){
-		        audio.play();
-		    }
-		 
-		    function pause(){
-		        audio.pause();
-		    }
-		 
-		    function stop(){
-		        audio.pause();
-		        audio.currentTime = 0;
-		    }
-
-		    audio.loop = true;
-		 
-		    // function aumentar_volume(){
-		    //     if( audio.volume < 1)  audio.volume += 0.1;
-		    // }
-		 
-		    // function diminuir_volume(){
-		    //     if( audio.volume > 0)  audio.volume -= 0.1;
-		    // }
-		         
-		    // function mute(){
-		    //     if( audio.muted ){
-		    //         audio.muted = false;
-		    //     }else{
-		    //         audio.muted = true;
-		    //     }
-		    //}
-		</script>
-		<script type="text/javascript" src="game.js"></script>
+	
+		<script type="text/javascript" src="gameAlpha.js"></script>
+		<script type="text/javascript" src="audio.js"></script>
 	</body>
 </html>
